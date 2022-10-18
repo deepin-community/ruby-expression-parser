@@ -1,0 +1,16 @@
+This patch removes the usage of git in gemspec.
+---
+
+--- ruby-expression-parser.orig/expression_parser.gemspec
++++ ruby-expression-parser/expression_parser.gemspec
+@@ -12,8 +12,8 @@ spec = Gem::Specification.new do |s|
+   s.homepage = "http://github.com/nricciar/expression_parser"
+   s.platform = Gem::Platform::RUBY
+   s.summary = "Math parser based on Lukasz Wrobel's blog post"
+-  s.files = `git ls-files`.split("\n")
+-  s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
++  s.files = ''
++  s.test_files = ''
+   s.require_path = "lib"
+   s.description = File.read("README")
+   s.has_rdoc = false

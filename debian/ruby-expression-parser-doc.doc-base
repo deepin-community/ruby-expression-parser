@@ -1,0 +1,14 @@
+Document: ruby-expression-parser-doc
+Title: Debian ruby-expression-parser Manual
+Author: David Ricciardi
+Abstract: mathematical expression parser for Ruby
+ Implementation of a parser for mathematical expressions. Introducing the
+ Parser class which parses raw string input and gives mathematical objects as
+ output.
+ .
+ Inspired by http://lukaszwrobel.pl/blog/math-parser-part-3-implementation .
+Section: Programming/Ruby
+
+Format: HTML
+Index: /usr/share/doc/ruby-expression-parser-doc/html/index.html
+Files: /usr/share/doc/ruby-expression-parser-doc/html/*

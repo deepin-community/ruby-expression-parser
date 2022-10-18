@@ -1,0 +1,14 @@
+This patch removes the usage of relative paths.
+Author: Utkarsh Gupta <guptautkarsh2102@gmail.com>
+Date: 05th March 2019
+---
+
+--- a/spec/parser_spec.rb
++++ b/spec/parser_spec.rb
+@@ -1,4 +1,5 @@
+-require File.join(File.dirname(__FILE__),'../lib/expression_parser')
++#require File.join(File.dirname(__FILE__),'../lib/expression_parser')
++require 'expression_parser'
+ include ExpressionParser
+ 
+ describe Parser do

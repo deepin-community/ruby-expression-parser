@@ -1,0 +1,44 @@
+Source: ruby-expression-parser
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Per Andersson <avtobiff@gmail.com>,
+           Utkarsh Gupta <guptautkarsh2102@gmail.com>
+Build-Depends: debhelper (>= 11~),
+               gem2deb,
+               rake,
+               ruby-rspec
+Standards-Version: 4.3.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-expression-parser.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-expression-parser
+Homepage: https://github.com/nricciar/expression_parser
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-expression-parser
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends}
+Suggests: ruby-expression-parser-doc
+Description: Mathematical expression parser for Ruby
+ Implementation of a parser for mathematical expressions. Introducing the
+ Parser class which parses raw string input and gives mathematical objects as
+ output.
+ .
+ Inspired by http://lukaszwrobel.pl/blog/math-parser-part-3-implementation .
+
+Package: ruby-expression-parser-doc
+Section: doc
+Architecture: all
+Depends: libjs-jquery,
+         ${misc:Depends}
+Suggests: ruby-expression-parser
+Description: mathematical expression parser for Ruby (documentation)
+ Implementation of a parser for mathematical expressions. Introducing the
+ Parser class which parses raw string input and gives mathematical objects as
+ output.
+ .
+ Inspired by http://lukaszwrobel.pl/blog/math-parser-part-3-implementation .
+ .
+ This package contains the documentation for ruby-expression-parser.
